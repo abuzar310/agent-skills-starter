@@ -4,7 +4,7 @@
 
 If you've ever stared at a giant skills dump and thought *"which ones do I actually need?"* — this repo is for you.
 
-~**133 skills**, cherry-picked and organized by job-to-be-done. Not 400 random folders. Not 10 toy demos. Enough to ship marketing, SEO, design, video, docs, and real engineering workflows.
+~**136 skills**, cherry-picked and organized by job-to-be-done. Not 400 random folders. Not 10 toy demos. Enough to ship marketing, SEO, design, video, docs, and real engineering workflows.
 
 Compatible with the [Agent Skills](https://agentskills.io) format (`SKILL.md` + optional scripts/references/assets).
 
@@ -82,11 +82,11 @@ Don't install everything on day one. Start with a kit:
 
 | Kit | Skills | Best for |
 |-----|--------|----------|
-| **Builder** | `frontend-design`, `ui-ux-pro-max`, `skill-creator`, `systematic-debugging`, `test-driven-development`, `verification-before-completion`, `vibe-sec`, `stop-slop` | Shipping apps with AI |
+| **Builder** | `frontend-design`, `ui-ux-pro-max`, `skill-creator`, `systematic-debugging`, `test-driven-development`, `verification-before-completion`, `vibe-sec`, `skillguard`, `stop-slop` | Shipping apps with AI |
 | **Marketer** | `product-marketing`, `copywriting`, `cro`, `seo`, `seo-audit`, `ads`, `ad-creative`, `analytics`, `launch` | Growth, landing pages, campaigns |
 | **Content / SEO** | `seo`, `seo-content`, `seo-technical`, `ai-seo`, `content-strategy`, `copy-editing`, `schema` | Rankings + AI search |
 | **Maker of things** | `pdf`, `pptx`, `docx`, `remotion-create`, `hyperframes`, `canvas-design` | Docs, decks, video |
-| **Agent power-user** | `brainstorming`, `planning-with-files`, `writing-plans`, `dispatching-parallel-agents`, `ponytail`, `caveman` | Better agent workflows |
+| **Agent power-user** | `brainstorming`, `planning-with-files`, `writing-plans`, `dispatching-parallel-agents`, `ponytail`, `caveman`, `agent-reach`, `skillguard` | Better agent workflows |
 
 ---
 
@@ -209,10 +209,11 @@ Don't install everything on day one. Start with a kit:
 | [xlsx](skills/xlsx/) | Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit,... |
 
 
-### Engineering & Agents (29)
+### Engineering & Agents (32)
 
 | Skill | What it helps with |
 |-------|-------------------|
+| [agent-reach](skills/agent-reach/) | MUST USE when user wants to research/search/look up/find anything on the internet — e.g. "research this topic", "do a deep dive on X", "search the... |
 | [brainstorming](skills/brainstorming/) | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explore... |
 | [caveman](skills/caveman/) | Ultra-compressed communication mode. Cuts output tokens 65% (measured) by speaking like caveman |
 | [caveman-commit](skills/caveman-commit/) | Ultra-compressed commit message generator. Cuts noise from commit messages while preserving |
@@ -231,11 +232,13 @@ Don't install everything on day one. Start with a kit:
 | [receiving-code-review](skills/receiving-code-review/) | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionabl... |
 | [requesting-code-review](skills/requesting-code-review/) | Use when completing tasks, implementing major features, or before merging to verify work meets requirements |
 | [skill-creator](skills/skill-creator/) | Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch,... |
+| [skillguard](skills/skillguard/) | Scan a third-party Agent Skill, Claude Code plugin, or MCP server for malware BEFORE installing it. Use when the user says "is this skill safe?", "scan this... |
 | [smart-explore](skills/smart-explore/) | Token-optimized structural code search using tree-sitter AST parsing. Use instead of reading full files when you need to understand code ... |
 | [stop-slop](skills/stop-slop/) | Remove AI writing patterns from prose. Use when drafting, editing, or reviewing text to eliminate predictable AI tells. |
 | [subagent-driven-development](skills/subagent-driven-development/) | Use when executing implementation plans with independent tasks in the current session |
 | [systematic-debugging](skills/systematic-debugging/) | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
 | [test-driven-development](skills/test-driven-development/) | Use when implementing any feature or bugfix, before writing implementation code |
+| [tikhub](skills/tikhub/) | Fetch live social-platform data via TikHub (posts, profiles, comments, search, trends, analytics, media download URLs) for TikTok, Douyin, Instagram, YouTube,... |
 | [using-git-worktrees](skills/using-git-worktrees/) | Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated... |
 | [verification-before-completion](skills/verification-before-completion/) | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands a... |
 | [version-bump](skills/version-bump/) | Automated semantic versioning and release workflow for Claude Code plugins. Handles version increments across package.json, marketplace.j... |
@@ -260,6 +263,20 @@ Don't install everything on day one. Start with a kit:
 | [remotion-interactivity](skills/remotion-interactivity/) | Best practices for writing Remotion animations that stay intuitive for agents and editable in Remotion Studio Visual Mode. |
 | [remotion-render](skills/remotion-render/) | Best practices for rendering videos |
 
+
+---
+
+## 2026-09 capability additions
+
+Compared against this pack (source of truth) before adding anything. Existing skills were not modified or deleted.
+
+| Added | Why |
+|-------|-----|
+| `agent-reach` | Internet research router (X/Reddit/YouTube/GitHub/etc.). Not a UI/design skill. Router skill only — no installer, cookies, or `.env`. |
+| `skillguard` | Static scan of third-party skills/MCP **before** install. Complements `vibe-sec` (app code). |
+| `tikhub` | Paid TikHub API/MCP for live platform data. One connector skill — not the 19-skill marketplace, and not a duplicate of `social` (copy). |
+
+Skipped: Ghost-Downloader-3 (desktop app, not an agent skill), yizhiyanhua-ai/media-downloader (cookie/`zshrc` installer risk; video skills already cover in-project media), agent-0x/reach (remote command agent; name collision only).
 
 ---
 
