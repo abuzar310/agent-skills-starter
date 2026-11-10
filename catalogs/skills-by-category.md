@@ -118,11 +118,12 @@
 | [xlsx](skills/xlsx/) | Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit,... |
 
 
-### Engineering & Agents (32)
+### Engineering & Agents (33)
 
 | Skill | What it helps with |
 |-------|-------------------|
 | [agent-reach](skills/agent-reach/) | MUST USE when user wants to research/search/look up/find anything on the internet — e.g. "research this topic", "do a deep dive on X", "search the... |
+| [obscura](skills/obscura/) | Web search and page reading with Obscura, an open-source headless browser: text, markdown, links, screenshots, PDFs from any URL... |
 | [brainstorming](skills/brainstorming/) | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explore... |
 | [caveman](skills/caveman/) | Ultra-compressed communication mode. Cuts output tokens 65% (measured) by speaking like caveman |
 | [caveman-commit](skills/caveman-commit/) | Ultra-compressed commit message generator. Cuts noise from commit messages while preserving |

@@ -4,7 +4,7 @@
 
 If you've ever stared at a giant skills dump and thought *"which ones do I actually need?"* — this repo is for you.
 
-~**136 curated skills**, plus **279 Agency specialists** (`agency-*`) you can pull by name in any session. The original pack stays cherry-picked; The Agency roster is the add-on for domain experts.
+~**137 curated skills**, plus **279 Agency specialists** (`agency-*`) you can pull by name in any session. The original pack stays cherry-picked; The Agency roster is the add-on for domain experts.
 
 Compatible with the [Agent Skills](https://agentskills.io) format (`SKILL.md` + optional scripts/references/assets).
 
@@ -86,7 +86,7 @@ Don't install everything on day one. Start with a kit:
 | **Marketer** | `product-marketing`, `copywriting`, `cro`, `seo`, `seo-audit`, `ads`, `ad-creative`, `analytics`, `launch` | Growth, landing pages, campaigns |
 | **Content / SEO** | `seo`, `seo-content`, `seo-technical`, `ai-seo`, `content-strategy`, `copy-editing`, `schema` | Rankings + AI search |
 | **Maker of things** | `pdf`, `pptx`, `docx`, `remotion-create`, `hyperframes`, `canvas-design` | Docs, decks, video |
-| **Agent power-user** | `brainstorming`, `planning-with-files`, `writing-plans`, `dispatching-parallel-agents`, `ponytail`, `caveman`, `agent-reach`, `skillguard` | Better agent workflows |
+| **Agent power-user** | `brainstorming`, `planning-with-files`, `writing-plans`, `dispatching-parallel-agents`, `ponytail`, `caveman`, `agent-reach`, `obscura`, `skillguard` | Better agent workflows |
 | **Agency** | `agency-roster`, `agency-frontend-developer`, `agency-code-reviewer`, `agency-backend-architect`, `agency-ui-designer`, `agency-rapid-prototyper` | Load a specialist persona |
 
 ---
@@ -210,11 +210,12 @@ Don't install everything on day one. Start with a kit:
 | [xlsx](skills/xlsx/) | Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit,... |
 
 
-### Engineering & Agents (32)
+### Engineering & Agents (33)
 
 | Skill | What it helps with |
 |-------|-------------------|
 | [agent-reach](skills/agent-reach/) | MUST USE when user wants to research/search/look up/find anything on the internet — e.g. "research this topic", "do a deep dive on X", "search the... |
+| [obscura](skills/obscura/) | Web search and page reading with Obscura, an open-source headless browser: text, markdown, links, screenshots, PDFs from any URL... |
 | [brainstorming](skills/brainstorming/) | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explore... |
 | [caveman](skills/caveman/) | Ultra-compressed communication mode. Cuts output tokens 65% (measured) by speaking like caveman |
 | [caveman-commit](skills/caveman-commit/) | Ultra-compressed commit message generator. Cuts noise from commit messages while preserving |
